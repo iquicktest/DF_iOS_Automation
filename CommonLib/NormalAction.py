@@ -74,9 +74,7 @@ class DejaApp(object):
         self.__do(By.NAME, self.back)
 
     def login_by_facebook(self, username, password):
-        if not is_element_present(self.wd, By.NAME, 'PROFILE'):
-            self.go_to_profile_page()
-
+        self.go_to_feeds_page()
         self.__do(By.NAME, self.locator_login_facebook)
         sleep(4)
         self.wd.switch_to.context('WEBVIEW')
