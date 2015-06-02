@@ -13,7 +13,8 @@ class SmokeTestingOnSauceTests(SauceTestCase):
     def test_user_can_login_facebook(self):
         sp = StartPage(self.driver)
         explore_page = sp.finish_tutorial()
-        explore_page.login_by_facebook('mozatqa90@gmail.com', 'mozatm2u')
+        feeds_page = explore_page.login_by_facebook('mozatqa90@gmail.com', 'mozatm2u')
+        feeds_page.go_to_setting_page()
         # deja = DejaApp(self.driver)
         # deja.go_to_home_page()
         # deja.go_to_setting_page()
