@@ -69,16 +69,20 @@ class BasePage(object):
             print 'NoSuchElementException'
             return None
 
-    def check_element_exist_by_locator(self, locator):
+    def check_exist(self, locator):
         return is_element_present(self.wd, locator)
 
-    def check_element_visible_by_locator(self, locator):
+    def check_visible(self, locator):
         return is_element_visible(self.wd, locator)
 
-    def check_element_not_visible_by_locator(self, locator):
+    def check_not_visible(self, locator):
         return is_element_not_visible(self.wd, locator)
 
     def login_by_facebook(self, username, password):
+        """
+
+        :rtype : FeedsPage
+        """
         self.go_to_feeds_page()
         self.wd.find_element(*FeedsPageLocators.BTN_FACEBOOK).click()
         sleep(4)
