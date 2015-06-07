@@ -1,6 +1,6 @@
 from time import sleep
+from selenium.webdriver.common.by import By
 from CommonLib import *
-from ObjectRepository.locators import *
 from PageFactory.basepage import BasePage
 
 __author__ = 'xubin'
@@ -36,7 +36,7 @@ class FeedsPage(BasePage):
             self.wd.find_element(*self.BTN_CONFIRM).click()
             sleep(2)
             self.wd.switch_to.context("NATIVE_APP")
-            return FeedsPage(self.wd)
+            return self
         except NoSuchElementException:
             return None
 
@@ -83,7 +83,6 @@ class CommonPage(BasePage):
     TAB_FEEDS = (By.XPATH, '//UIATabBar[1]/UIAButton[4]')
     TAB_PROFILE = (By.XPATH, '//UIATabBar[1]/UIAButton[5]')
     BTN_BACK = (By.NAME, 'Back')
-
 
     def go_to_home_page(self):
         try:

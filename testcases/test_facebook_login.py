@@ -13,7 +13,6 @@ class SmokeTestingOnSauceTests(SauceTestCase):
     def test_user_can_login_facebook(self):
         sp = StartPage(self.driver)
         explore_page = sp.finish_tutorial()
-        feeds_page = explore_page.login_by_facebook(
+        feeds_page = CommonPage(self.driver).go_to_feeds_page()
+        feeds_page = feeds_page.login_by_facebook(
             'mozatqa90@gmail.com', 'mozatm2u')
-        settings_page = feeds_page.go_to_setting_page()
-        assert settings_page.check_exist(SettingPageLocators.LBE_SING_OUT)
