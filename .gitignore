@@ -1,3 +1,4 @@
 workspace.xml
 xubin.xml
 *.pyc
+.idea/
