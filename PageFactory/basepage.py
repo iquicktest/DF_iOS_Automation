@@ -10,13 +10,6 @@ class BasePage(object):
         self.wd = driver
         self.wait = WebDriverWait(self.wd, 20)
 
-    def back_to(self):
-        try:
-            self.wd.find_element(*BaseLocators.BTN_BACK).click()
-        except NoSuchElementException:
-            print 'NoSuchElementException'
-            return None
-
     def check_exist(self, locator):
         return is_element_present(self.wd, locator)
 

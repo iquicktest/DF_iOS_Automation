@@ -84,6 +84,13 @@ class CommonPage(BasePage):
     TAB_PROFILE = (By.XPATH, '//UIATabBar[1]/UIAButton[5]')
     BTN_BACK = (By.NAME, 'Back')
 
+    def back_to(self):
+        try:
+            self.wd.find_element(*self.BTN_BACK).click()
+        except NoSuchElementException:
+            print 'NoSuchElementException'
+            return None
+
     def go_to_home_page(self):
         try:
             self.wd.find_element(*self.TAB_HOME).click()
