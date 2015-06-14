@@ -59,6 +59,14 @@ class ExplorePage(BasePage):
 class ProfilePage(BasePage):
     BTN_SETTINGS = (By.NAME, 'Setting')
 
+    def go_to_settting_page(self):
+        try:
+            self.wd.find_element(*self.BTN_SETTINGS).click()
+            return SettingPage(self.wd)
+        except NoSuchElementException:
+            print 'No Such Element'
+            return None
+
 
 class StartPage(BasePage):
     TUTORIAL1 = (By.NAME, 'Tutorial1_iP6.jpg')
@@ -71,9 +79,10 @@ class StartPage(BasePage):
             self.wd.find_element(*self.TUTORIAL1).click()
             self.wd.find_element(*self.TUTORIAL2).click()
             self.wd.find_element(*self.TUTORIAL3).click()
+            return ExplorePage(self.wd)
         except NoSuchElementException:
-            raise
-        return ExplorePage(self.wd)
+            print 'No Such Element'
+            return None
 
 
 class CommonPage(BasePage):
