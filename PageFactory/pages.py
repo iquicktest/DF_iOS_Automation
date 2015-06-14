@@ -14,7 +14,7 @@ class SettingPage(BasePage):
     SWH_SAVE_ORIGIN_STYLE_IMAGES = (By.NAME, 'Save Original Style Images')
     LBE_CLEAR_CACHE = (By.NAME, 'Clear Image Cache')
     LBE_PUSH_NOTIFICATION = (By.NAME, 'Push Notifications')
-    LBE_SING_OUT = (By.NAME, 'Sign Ou1t')
+    LBE_SING_OUT = (By.NAME, 'Sign Out')
 
 
 class FeedsPage(BasePage):
