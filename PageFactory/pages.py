@@ -10,6 +10,13 @@ class HomePage(BasePage):
     pass
 
 
+class SettingPage(BasePage):
+    SWH_SAVE_ORIGIN_STYLE_IMAGES = (By.NAME, 'Save Original Style Images')
+    LBE_CLEAR_CACHE = (By.NAME, 'Clear Image Cache')
+    LBE_PUSH_NOTIFICATION = (By.NAME, 'Push Notifications')
+    LBE_SING_OUT = (By.NAME, 'Sign Ou1t')
+
+
 class FeedsPage(BasePage):
     BTN_FACEBOOK = (By.NAME, 'FBLoginBigIcon')
     BTN_FOLLOWING = (By.NAME, 'Following')
@@ -51,13 +58,6 @@ class ExplorePage(BasePage):
 
 class ProfilePage(BasePage):
     BTN_SETTINGS = (By.NAME, 'Setting')
-
-
-class SettingPage(BasePage):
-    SWH_SAVE_ORIGIN_STYLE_IMAGES = (By.NAME, 'Save Original Style Images')
-    LBE_CLEAR_CACHE = (By.NAME, 'Clear Image Cache')
-    LBE_PUSH_NOTIFICATION = (By.NAME, 'Push Notifications')
-    LBE_SING_OUT = (By.NAME, 'Sign Out')
 
 
 class StartPage(BasePage):
