@@ -18,4 +18,4 @@ env:
     - secure: FxKPxI5NdrKhsLSDs+ltUfZ3DjxknsusZwqxUXZiNmbmAqkazSVCWjG+AiI24KS589Oz1FGhrn3PmayWnZ9o1DIjsYU9N6G+L9OpD1xmTaAFtM/LRz/6BUhaT47K3ABV4Jp/5Clo5iOOIXoGTTmH4XIv4krzeIoGRo3z72KUMc0=
 
 # command to run tests
-script: py.test test_facebook_login.py
+script: py.test testcases/test_facebook_login.py
