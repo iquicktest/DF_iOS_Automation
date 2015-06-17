@@ -2,3 +2,4 @@ workspace.xml
 xubin.xml
 *.pyc
 .idea/
+.DS_Store
