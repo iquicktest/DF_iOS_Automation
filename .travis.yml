@@ -9,10 +9,6 @@ install:
   - pip install Appium-Python-Client
   - pip install sauceclient
 
-
-addons:
-  sauce_connect: false
-
 env:
   global:
     - secure: Lxl9sOAmdL6rWbzuI0ncqf+nsFHkjdO0QCRBaquTt6RLiij50cHs5SqTYW7GzzxcfOe6ZOeJwh+sHQvlFkpZLzxnKvQHXFRFpXR4VCTZhp3rnPhzBR5spyL4ewijm9/DOj2TVEL2QDUUq3rX32GOyVh52/aaoc3Bxp38H6MMfrk=
