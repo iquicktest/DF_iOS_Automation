@@ -11,8 +11,8 @@ install:
 
 env:
   global:
-    - secure: asb8/zLS4PTFhOP5vq2eijiiuvl9nrc92OJ3viDgAQwvHKcL4D07+Y9TAjnBYsm7WKKDaCoOZN/Y6PQOdLJrbFE1HNQTHhYYhrTem7JnDfRZscMtGscjIVfTQrCboj+Ty5lKm3+4wzCynR1Z4tft1PiSFSHePznDb/a2JseAtEM=
-    - secure: ZFnXsy574j/7zuyemFpjjS1MKp5cyn76cm+Md101Lih/Mjgr3xpSDiIETumq6qxBJEWF+rYOUSifKQs8IyN+9KcUb9bsB6IccN4jH9pRhvL+u2nrhCSERxVtwLZPwOFGLCdZ+ivv7JG5DbnRP3nS1y7aSiqmgvDAFr7FZp67LSo=
+    - secure: F1jovPALc664h97ZGvXOZ6oT3RON0+fuuEdWM88xx50Pb82TNWKl8szEdmZ96sRmw1LHzVtS5CVN3ugDpO3xCKxorckrtOXjzx9ffeUzwgEwnJXuNF91ew5N44h/Y3Zjw5XvF2opIaT9DMLIKWMAppNQY8Th+XMUFVRZmIaiNKA=
+    - secure: kYW8g4+jImHgltsD+TUn1Cu5pylKPo5tvUKtfD6w3uQLiMU6gj3h9tqVOejGW1CMgGTHrg0vdi6PyOJLC+D0ri0XhyWP28ecuyfNC2yi+v+UsnWEAnIRFzlCecV7hJkXJrxRbTVdmtU+H2PCBKlXmbHRiN83BI4LrAYxvv3tfss=
 
 # command to run tests
 script: py.test testcases/test_facebook_login.py
