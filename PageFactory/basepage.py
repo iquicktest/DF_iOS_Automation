@@ -19,3 +19,5 @@ class BasePage(object):
     def check_not_visible(self, locator):
         return is_element_not_visible(self.wd, locator)
 
+    def check_exist_by_text(self, text):
+        return is_element_present(self.wd, (By.NAME, text))

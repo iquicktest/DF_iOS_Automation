@@ -16,6 +16,9 @@ class SettingPage(BasePage):
     LBE_PUSH_NOTIFICATION = (By.NAME, 'Push Notifications')
     LBE_SING_OUT = (By.NAME, 'Sign Out')
 
+    def check_is_login(self):
+        return self.check_exist(self.LBE_SING_OUT)
+
 
 class FeedsPage(BasePage):
     BTN_FACEBOOK = (By.NAME, 'FBLoginBigIcon')
@@ -59,7 +62,7 @@ class ExplorePage(BasePage):
 class ProfilePage(BasePage):
     BTN_SETTINGS = (By.NAME, 'Setting')
 
-    def go_to_settting_page(self):
+    def go_to_setting_page(self):
         try:
             self.wd.find_element(*self.BTN_SETTINGS).click()
             return SettingPage(self.wd)
