@@ -11,8 +11,8 @@ install:
 
 env:
   global:
-    - secure: QASPfyn01qwH7YKHs59rF7f8GZy3KiinN3+IXHks4Y6Dm4ESeRmsNwpYzZPEzY/jvYWxVSYk5Mo2lVJVX0dPJAdtFqCuwfHEPXMmNQ6grm9yLg0q229rPGob7D7PDNwA1VEHEmlyhtUR04hQBG3mZWnL4txOBXqF+MrXrRCtaIM=
-    - secure: YjQo6p0nHvjqbOByxj34psB/YyGRfp68rXuF84319qiXmP5ILxt/1CJdERhoHfoE9ayPFh0LAFHIcC2G89X+pdtxQb+GPeLNCIIIQWRtyLxWRc/2FPXD4g2xKLHgQuBg+Yj2I4L1ZnybErrTXULHSrY8c3GWXuAFWQRlWZY3ijo=
+    - secure: E1gmPdLex6QKstkwjGEXs1/zjXUTNY7PJt9qNepCLl3B1n9jq0L5D2XNfPOLpNzGPweF85vJxyBQ5pQLxF7u6tQ1oPVjmZmz9V1pRXpZmttf4hbCqJk3Yw2qY2sNKNfALW4YSvDWCS/jIARbHqYhWOQYUkcoOYSsQsDuwfCbDAg=
+    - secure: h63VBqN55WVLLmUC4/HIKGflUwwfcOOyGrsEy+2Ds8KKcTpyjCaYqZOgcg4jNyXTj2E3kR9Qpv3z5AcnZvRKpGNMaq/6UqPcxBqROG9ZYbfrWAt9EY5y14lpvfvXUm+8P8lJcJEZceaN2Dkq1dW+aIAngPQ6StqT3ciTjHVChGE=
     
 # command to run tests
 script: py.test testcases/test_facebook_login.py
