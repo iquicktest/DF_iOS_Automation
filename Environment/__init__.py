@@ -10,7 +10,7 @@ platforms = [
     # },
     {
         'platformName': 'iOS',
-        'platformVersion': '8.3',
+        'platformVersion': '8.1',
         'deviceName': 'iPhone Simulator',
         'app': appPath,
         'appiumVersion': '1.3.7'
