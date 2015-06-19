@@ -67,7 +67,7 @@ class ProfilePage(BasePage):
             self.wd.find_element(*self.BTN_SETTINGS).click()
             return SettingPage(self.wd)
         except NoSuchElementException:
-            print 'No Such Element'
+            print '[Element Not Exist]: No Such Element ' + self.BTN_SETTINGS
             return None
 
 
