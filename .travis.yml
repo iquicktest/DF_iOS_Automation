@@ -5,13 +5,14 @@ python:
 # command to install dependencies
 install:
   - pip install selenium
-  - pip install behave
+  - pip install pytest
+  - pip install Appium-Python-Client
   - pip install sauceclient
 
 env:
   global:
     - secure: GU3wI8fhNiFGem6aK+fhi19hlGgVQLuSdZqevpuZ5oi58AXAVj3xvIE97VKcqc7xXehs/MaVdr1uCRswNroREVVUEjPJF3Z6g4kAHV8sqZMiMJ6Jb650ZbeDKMRspY+U4en5UlUWoFnwuqV/ksa2nLLmfRgifC13wzyoqGsKGQQ=
     - secure: EgU/Uylq/YrE6vwM9ZNZ2UJWUzVLdbPSbwusgPaP2SXEhLOFP0ygf87NFZXQrn0mjsIoWthEldSYHMBQafiiUNDDrd/KOYph5LX0XnwWNtHxVBA2o0ROYgstNN2sAb5tYgUEXJioZ3T8mOOIwr2P39HA1xVrUx5xeE5DjN5RqGs=
-
+    
 # command to run tests
-script: python parallel_run.py
+script: py.test testcases/test_facebook_login.py
